@@ -1,5 +1,4 @@
-
-FROM adoptopenjdk/openjdk11:latest
+FROM openjdk:11
 VOLUME /tmp
 ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} app.jar
